@@ -1,0 +1,9 @@
+#udemy taming big data with apache spark
+#cours bought from udemy on archismanroy31@gmail.com
+
+#learn vim
+#https://www.linux.com/learn/vim-101-beginners-guide-vim
+#https://askubuntu.com/questions/551990/what-does-path-mean
+
+#this is very Important - How to start Jupyter - Run on Terminal
+PYSPARK_DRIVER_PYTHON="jupyter" PYSPARK_DRIVER_PYTHON_OPTS="notebook" pyspark

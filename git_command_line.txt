@@ -1,0 +1,30 @@
+git --version
+
+git config --global user.name "Archisman"
+git config --global user.email "archismanroy31@gmail.com"
+
+git config --list
+
+#Change to GIT directory using cd, pwd and ls
+
+git status
+
+git add -A
+
+git reset #If you want to reset
+
+git commit -m "git code + added R codes"
+
+git push 
+
+touch .gitignore #to ignore files to repo
+
+ls -la
+
+#use vi to edit .gitignore
+
+#https://www.cs.colostate.edu/helpdocs/vi.html
+
+#nano filename
+
+git clone git_url # in the specific folder

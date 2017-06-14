@@ -1,0 +1,9 @@
+LEARN HMM
+
+http://hmmlearn.readthedocs.io/en/latest/tutorial.html
+
+http://www.shokhirev.com/nikolai/abc/alg/hmm/hmm.html
+
+http://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/
+
+seqHMM package vignette is interesting as well

@@ -1,0 +1,48 @@
+#Setup Data Science AWS Server
+#First step: Create a server instance
+https://aws.amazon.com/getting-started/tutorials/launch-a-virtual-machine/
+
+after cd /Users/archismanroy
+chmod 400 ~/Downloads/ArchiLogIn.pem
+
+ssh -i ~/Downloads/ArchiLogIn.pem ubuntu@52.10.121.122
+
+#For Checking RAM on ubuntu
+free -m
+
+#for hard disk
+df -h
+cd /  #Root Directory
+cd .. #goes one step back
+ls #list all directory
+
+#setting up remote server
+
+http://chrisalbon.com/jupyter/run_project_jupyter_on_amazon_ec2.html
+PDF saved as well
+
+#xgboost 
+sudo apt-get install make
+sudo apt-get update
+sudo apt-get install gcc
+sudo apt-get install g++
+sudo apt-get install git
+git clone --recursive https://github.com/dmlc/xgboost
+cd xgboost
+make
+
+cd python-package
+sudo python setup.py install
+
+#xgboost not working
+
+#For now use Community AMI Kaggle Machine
+
+#also try
+pip install xgboost
+
+#Setting up AMI
+http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/tkv-create-ami-from-instance.html
+
+http://machinelearningmastery.com/train-xgboost-models-cloud-amazon-web-services/
+

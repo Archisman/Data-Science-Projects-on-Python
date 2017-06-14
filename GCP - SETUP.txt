@@ -1,0 +1,58 @@
+#First step is to install google command line tools
+gcloud init
+
+CHANGE TO UBUNTU 14.04 LTS while creatinf Instance
+
+gcloud compute --project "wise-chalice-161519" ssh --zone "us-central1-c" "instance-1"
+
+Install Anaconda the same way it is done in AWS
+
+#INSTALL ANACONDA WITH PYTHON 2.4
+
+source ~/.bashrc
+
+sudo apt-get update
+sudo apt-get install git
+
+sudo apt-get install make
+sudo apt-get install gcc
+sudo apt-get install g++
+
+#CLONE XG BOOST - CODE ON XGBOOST WEBSITE
+git clone --recursive https://github.com/dmlc/xgboost
+cd xgboost
+
+./build.sh
+
+cd python-package
+
+python setup.py install
+
+
+cd $HOME
+
+#GET STATIC IP and add firewall rule - refer to comments in PDF
+
+#FOR PASSWORD SETTING USE AWS PDF
+
+
+#PASSWORD: ssd123
+
+#TRANSFER FILES
+cd into file location in local
+gcloud compute copy-files data.zip  instance-2:/home/archismanroy
+
+Other way round - RUN IN LOCAL MACHINE ONLY
+gcloud compute copy-files instance-2:/home/archismanroy/data.zip   /Users/archismanroy
+
+sudo apt-get install unzip
+unzip data.zip -d /home/archismanroy
+
+
+#Use this
+gcloud compute --project "wise-chalice-161519" ssh --zone "us-central1-c" --ssh-key-file /Users/archismanroy/google_compute_engine   "instance-2" 
+
+
+
+
+
